@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Sumar">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Primer Valor"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="218dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="segundo"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="183dp"
+        android:onClick="Sum"
+        android:text="Calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="88dp"
+        android:text="Resultado"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <RadioGroup
+        android:layout_width="79dp"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginBottom="164dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Restar" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sumar" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="208dp"
+        android:text="Multiplicar" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_marginBottom="171dp"
+        android:text="Dividir" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="61dp" />
+</RelativeLayout>
